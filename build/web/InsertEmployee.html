@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Employee From</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+              integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 style="text-align: center;">INSERT EMPLOYEE INFOMATION</h1>
+        <form style="margin: 10px 70px 10px 70px;font-size: 15px;" action="EmployeeController" method="post">
+            <div class="form-group has-success">
+                <label class="control-label" for="inputSuccess1">SSN</label>
+                <input type="text" class="form-control" id="inputSuccess1" name="SSN" aria-describedby="helpBlock2" required>
+            </div>
+            <div class="form-group has-warning">
+                <label class="control-label" for="inputWarning1">FNAME</label>
+                <input type="text" class="form-control" id="inputWarning1" name="FName" required>
+            </div>
+            <div class="form-group has-error">
+                <label class="control-label" for="inputError1">LNAME</label>
+                <input type="text" class="form-control" id="inputError1" name="LName" required>
+            </div>
+            <div class="form-group has-success">
+                <label class="control-label" for="inputSuccess1">ADDRESS</label>
+                <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2" name="Address" required>
+            </div>
+            <div class="form-group has-warning">
+                <label class="control-label" for="inputWarning1">SALARY</label>
+                <input type="text" class="form-control" id="inputWarning1" name="Salary" required>
+            </div>
+            <div class="form-group has-success">
+                <label class="control-label" for="inputSuccess1">SEX</label><br>
+                <label class="radio-inline">
+                    <input type="radio" name="Sex" id="inlineRadio1" checked value="1">Male
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="Sex" id="inlineRadio2" value="0">Femail
+                </label>
+            </div>
+                <div class="form-group has-warning">
+                    <label class="control-label" for="inputWarning1">DEPTNO</label>
+                    <select class="form-control" name="DeptNo">
+                        <option value="AD">Head Office</option>
+                        <option value="IS">Information</option>
+                        <option value="SE">Software Engineering</option>
+                    </select>
+                </div>
+                <div class="form-group has-warning">
+                    <label class="control-label" for="inputWarning1">SSNSUPERVISOR</label>
+                    <select class="form-control" name="SSNSupervisor">
+                        <option value="AD001">Alice West</option>
+                        <option value="AD002">Anna Laurent</option>
+                    </select>
+                </div>
+            <input class="btn btn-success" type="submit" value="submit">
+            <input class="btn btn-danger" type="reset" value="clear">
+            <a href="index.html" class="btn btn-info" role="button">Home</a>
+            <input type="hidden" name="service" value="addEmployee">
+        </form>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+                integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
